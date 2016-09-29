@@ -1,0 +1,13 @@
+//
+   Created by lishengyong on 2016/9/28.
+extends layout
+
+block content
+    h1= title
+    p Welcome to #{title}
+        div
+            input(id='filePath', name='filePath', type='text', placeholder='请输入code review的文件路径')
+            input.btn(id='reviewStart', type='button', value='点击开始')
+    div(id='reviewResult')
+
+    script(src='/javascripts/review.js')
